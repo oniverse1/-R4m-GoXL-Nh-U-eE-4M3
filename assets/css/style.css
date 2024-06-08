@@ -42,6 +42,239 @@ body.crev-portfolio section {
   position: relative;
 }
 
+.serv-swiper {
+  /* styles for all screens... */
+}
+
+@media (max-width: 768px) {
+  .serv-swiper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* adjust alignment for potentially more items per row */
+  }
+  
+  .swiper-wrapper {
+    width: 100%;
+  }
+  
+  .swiper-slide {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.serv-swiper {
+  /* styles for all screens... */
+}
+
+@media (max-width: 768px) {
+  .serv-swiper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .swiper-wrapper {
+    width: 100%;
+  }
+  
+  .swiper-slide {
+    margin-bottom: 20px;
+  }
+  
+  .item-box {
+    padding: 5px;  /* significantly reduce padding for better fit */
+  }
+  
+  .item-box img {
+    width: 30px;  /* aggressively reduce image size */
+    height: 30px; /* aggressively reduce image size */
+  }
+}
+.services .item-box {
+  padding: 5px; /* maintain some padding for aesthetics */
+}
+
+@media (max-width: 768px) {
+  .services .item-box {
+    padding: 2px;  /* further reduce padding on very small screens */
+  }
+  
+  .services .item-box h5 {  /* target the service title */
+    margin-bottom: 5px;  /* reduce margin for tighter spacing */
+    font-size: 14px;  /* reduce font size for smaller screens */
+  }
+  
+  .services .item-box p {  /* target the service description */
+    font-size: 12px;  /* reduce font size for smaller screens */
+    line-height: 1.4;  /* adjust line height for better readability */
+  }
+  
+  .services .item-box img {
+    width: 25px;  /* adjust image size as needed */
+    height: 25px; /* adjust image size as needed */
+  }
+}
+
+
+/*Heading for smaller screens*/
+
+
+/* Base styles for all screens */
+.main-heading {
+  font-size: 6rem; /* Adjust for desired size on larger screens */
+  font-weight: 700;
+  /* Other styles from fz-100 (if applicable) */
+}
+
+/* Media query for smaller screens (adjust breakpoint as needed) */
+@media only screen and (max-width: 768px) {
+  .main-heading {
+    font-size: 2.2rem!important; /* Adjust font size for smaller screens */
+  }
+}
+
+
+.carousel-container {
+  max-width: 800px; /* Adjust this value as needed */
+  margin: 0 auto; /* Center the carousel horizontally */
+}
+.carousel-container {
+  width: 100%; /* Default width for all screens */
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    /* Styles for screens less than or equal to 768px */
+    width: 80%; /* Reduce width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    /* Styles for screens less than or equal to 480px */
+    width: 90%; /* Adjust width further for very small screens */
+  }
+}
+
+
+
+
+
+/*amanedment code for carousel about me*/
+/* Base styles for all screens */
+/* Base styles for all screens */
+.service-list {
+  border-top: 1px solid #ddd;
+}
+
+.service-item {
+  border-bottom: 1px solid #ddd;
+  padding: 30px 0;
+}
+
+.service-heading {
+  display: flex;
+  align-items: center;
+}
+
+.service-heading .icon {
+  margin-right: 20px;
+}
+
+.service-heading .icon img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.service-heading h5 {
+  margin-bottom: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  .service-item .row {
+      flex-direction: column;
+  }
+
+  .service-heading {
+      margin-bottom: 15px;
+  }
+
+  .service-heading .icon {
+      margin-right: 10px;
+  }
+
+  .service-heading .icon img {
+      max-width: 30px;
+      max-height: 30px;
+  }
+
+  .service-heading h5 {
+      font-size: 18px;
+  }
+
+  .service-item p {
+      font-size: 14px;
+  }
+}
+
+
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.clients-grid .item {
+  text-align: center;
+}
+
+.clients-grid .item .img {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .clients-grid {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .clients-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .clients-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+
+
+
+/*about me v*/
+
+
+
+
+
+
+
+
+
+
+
+/*===========================*/
+
 
 /*for footer to be aligned in small screens*/
 .email-align {
